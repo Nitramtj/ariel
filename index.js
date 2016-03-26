@@ -1,6 +1,6 @@
 var Five = require("johnny-five");
 var bot = require("./lib/bot.js");
-var head = require("./lib/stepper.js");
+var head = require("./lib/stepper2.js");
 var Hapi = require('hapi');
 
 var boardOpts;
@@ -75,7 +75,7 @@ var commands = {  // Note: can have invalid commands here
   head:['panHeadCenter', 'panHeadLeft', 'panHeadRight',
         'tiltHeadCenter', 'tiltHeadFwd', 'tiltHeadBack',
         'heightHeadCenter', 'heightHeadUp', 'heightHeadDown',
-        'pulseStop']
+        'stop']
 };
 
 var board = new Five.Board(boardOpts);
