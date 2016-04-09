@@ -15,7 +15,7 @@ if (process.env.ARIELENV === "dev") {
     port: 80
   };
   boardOpts = {
-    port: "COM5"
+    port: "/dev/ttyACM0"
   };
 }
 
